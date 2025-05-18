@@ -17,6 +17,13 @@
 | ブランチの先頭を変更せずに最新に追従 | `git merge --ff-only origin/<branch>` |
 | ローカルの追跡設定を解除 | `git branch --unset-upstream` |
 
+#### ▼「ブランチ一覧」コマンドをコピー
+
+<div style="position:relative;display:inline-block;">
+<code id="branch-all" style="padding:4px 8px;display:inline-block;">git branch --all</code>
+<button onclick="navigator.clipboard.writeText(document.getElementById('branch-all').textContent);this.textContent='Copied!';setTimeout(()=>{this.textContent='Copy';},1200);" style="margin-left:8px;padding:2px 8px;font-size:0.9em;">Copy</button>
+</div>
+
 ### リモート操作
 
 | 目的  | コマンド |
