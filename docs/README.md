@@ -9,8 +9,8 @@
 | 新規ブランチ作成 & 移動 | `git switch -c <new-branch>` |
 | 既存ブランチへ移動 | `git switch <branch>` |
 | ブランチをリネーム | `git branch -m <new-name>` |
-| **ローカルブランチを削除** | `git branch -d <branch>`（未マージなら `-D`） |
-| マージされたブランチを一括削除 | <br>`git branch --merged |
+| ローカルブランチを削除 | `git branch -d <branch>`（未マージなら `-D`） |
+| マージされたブランチを一括削除 | `git branch --merged` |
 | 先祖コミット基準でブランチを切り替え | `git switch -c <new> <base-hash>` |
 | ブランチを別リモートへ対応付け | `git branch -u upstream/<branch>` |
 | ブランチ差分を確認 | `git diff <branchA>..<branchB>` |
