@@ -14,48 +14,8 @@
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <!-- コピーボタン用スタイル -->
-  <style>
-    .copy-btn {
-      position: absolute;
-      right: 0.5em;
-      top: 0.5em;
-      padding: 0.2em 0.6em;
-      font-size: 0.9em;
-      cursor: pointer;
-      background: #eee;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-    }
-    .code-block-wrapper {
-      position: relative;
-    }
-  </style>
 </head>
 <body>
   <div id="app"></div>
-  <!-- コピーボタン用スクリプト -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('pre > code').forEach(function(codeBlock) {
-        var wrapper = document.createElement('div');
-        wrapper.className = 'code-block-wrapper';
-        codeBlock.parentNode.parentNode.insertBefore(wrapper, codeBlock.parentNode);
-        wrapper.appendChild(codeBlock.parentNode);
-
-        var button = document.createElement('button');
-        button.className = 'copy-btn';
-        button.textContent = 'Copy';
-        button.addEventListener('click', function() {
-          var text = codeBlock.innerText;
-          navigator.clipboard.writeText(text).then(function() {
-            button.textContent = 'Copied!';
-            setTimeout(function() { button.textContent = 'Copy'; }, 1200);
-          });
-        });
-        wrapper.appendChild(button);
-      });
-    });
-  </script>
 </body>
 </html>
