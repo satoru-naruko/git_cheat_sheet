@@ -12,27 +12,5 @@
 
   <!-- ★ スクリプトはターゲットより後ろ -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('pre > code').forEach(function(codeBlock) {
-    var pre = codeBlock.parentNode;
-    pre.style.position = 'relative';
-    var button = document.createElement('button');
-    button.textContent = 'Copy';
-    button.style.position = 'absolute';
-    button.style.top = '4px';
-    button.style.right = '4px';
-    button.style.zIndex = 10;
-    button.style.padding = '2px 8px';
-    button.style.fontSize = '0.9em';
-    button.onclick = function() {
-      navigator.clipboard.writeText(codeBlock.innerText);
-      button.textContent = 'Copied!';
-      setTimeout(function(){button.textContent='Copy';}, 1200);
-    };
-    pre.appendChild(button);
-  });
-});
-</script>
 </body>
 </html>
