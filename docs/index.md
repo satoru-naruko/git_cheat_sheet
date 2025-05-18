@@ -1,8 +1,3 @@
----
-layout: default
-title: Git Cheat Sheet
----
-
 ## GitCheatSheet
 
 ### ブランチ操作
